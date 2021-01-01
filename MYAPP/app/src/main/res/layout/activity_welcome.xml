@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_xxxhdpi"
+    tools:context=".welcomeActivity">
+
+    <TextView
+        android:id="@+id/welcometext"
+        android:layout_width="245dp"
+        android:layout_height="139dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="296dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="296dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:text="WELCOME"
+        android:textColor="#2E3353"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/SIGNOUT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="162dp"
+        android:background="@drawable/custom_button2"
+        android:onClick="onclicksignout"
+        android:text="SIGN OUT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcometext" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="161dp"
+        android:background="@drawable/custom_button"
+        android:onClick="onclickwebview"
+        android:text="PROCEED TO MYSITE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SIGNOUT" />
+</androidx.constraintlayout.widget.ConstraintLayout>
